@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../components/Produtos.module.css';
+import styles from '../components/Produto.module.css';
 import { useParams } from 'react-router-dom';
 
 function Produto() {
@@ -43,8 +43,8 @@ function Produto() {
       <div>
         {' '}
         <h1>{produto.nome}</h1>
-        <span>R$ {produto.preco}</span>
-        <p>{produto.descricao}</p>
+        <span className={styles.preco}>R$ {produto.preco}</span>
+        <p className={styles.descricao}>{produto.descricao}</p>
       </div>
     </div>
   );
